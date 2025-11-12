@@ -7,8 +7,7 @@ import {
   ModalDescription,
   ModalFooter,
   ModalHeader,
-  ModalTitle,
-  ModalTrigger,
+  ModalTitle
 } from "@gbakws/ui";
 import { Button, Checkbox } from "@gbakws/ui";
 import { Input, TextField } from "@gbakws/ui";
@@ -112,9 +111,7 @@ export function MemberUpsertModal({
 
   return (
     <Modal isOpen={isOpen} onOpenChange={(open) => !open && onClose?.()}>
-      <ModalTrigger>
-        <Button>{member?.id ? "Edit Member" : "Add Member"}</Button>
-      </ModalTrigger>
+      <Button>{member?.id ? "Edit Member" : "Add Member"}</Button>
       <ModalContent size="xl">
         <ModalHeader>
           <ModalTitle>

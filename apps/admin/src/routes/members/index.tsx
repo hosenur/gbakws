@@ -51,7 +51,7 @@ function RouteComponent() {
                 { key: "state", title: "State" },
               ]}
             >
-              <TableColumn>Name</TableColumn>
+              <TableColumn isRowHeader>Name</TableColumn>
               <TableColumn>Mobile</TableColumn>
               <TableColumn>Blood Group</TableColumn>
               <TableColumn>Locality</TableColumn>
